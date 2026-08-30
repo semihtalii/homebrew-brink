@@ -14,7 +14,7 @@ cask "brink" do
 
   # 0.5.0 shipped arm64-only; 0.6.0+ is a universal binary.
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Brink.app"
 
