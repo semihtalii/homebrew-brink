@@ -12,8 +12,7 @@ cask "brink" do
     strategy :github_latest
   end
 
-  # 0.5.0 shipped arm64-only; 0.6.0+ is a universal binary.
-  depends_on arch: :arm64
+  # Universal binary (arm64 + x86_64) since 0.5.1.
   depends_on macos: :ventura
 
   app "Brink.app"
